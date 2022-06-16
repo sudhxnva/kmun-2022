@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   --menuWidth: 100vw;
   --blockquote: 20px;
   --background: #1b1b1b;
-  --primary: #ffc400;
+  --primary: #E7A9D4;
   --bodyColor: #afc2cb;
   --inActive: #555;
   --letterSpacing: -0.075rem;
@@ -77,7 +77,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
 body {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ButtonStyles = styled.button`
   color: #fff;
   background-color: transparent;
-  font-family: "Heebo", sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: 0;
   text-decoration: none;
   padding: 0;

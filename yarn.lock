@@ -1135,6 +1135,16 @@
   resolved "https://registry.yarnpkg.com/@fontsource/heebo/-/heebo-4.5.12.tgz#60ee38333ba467e862eba886d9169cc069156403"
   integrity sha512-WgTnLcU6XL2TLKe12QW81o2JCDqaUp56BdoySmLKWePHhdIgN4YX1Gn208edAzuRxaInK6LhiVdA0jnk5XjWVA==
 
+"@fontsource/montserrat@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.11.tgz#9dff8e7bdcd0680789353e2632683e8ae82bd002"
+  integrity sha512-XAYZmprnZDVSLIeEiB3evVG2JD+yoR9aT+I6LCOcwZFQ6ro9UPpopDncqoqwv+j5M0/UjyAP6ov70+L/fmP8Gg==
+
+"@fontsource/poppins@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.8.tgz#65ce9b32f31bda5a25c23001bcebf1c66e440320"
+  integrity sha512-HE9yLDxYJEcxooVrYvvEhtyxaYU32hQIx1+npKegVefceE0l0zi0ePqKWWxYxkFpyy6WuZSQ+9rai3INnYKEJA==
+
 "@gatsbyjs/parcel-namer-relative-to-cwd@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.1.0.tgz#ed2e53426ed66cd8bae6917b0039c348b49ac737"

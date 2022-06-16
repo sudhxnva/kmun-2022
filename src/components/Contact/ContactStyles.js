@@ -21,7 +21,7 @@ export const ContactStyles = styled.section`
     width: 100%;
     font-size: var(--p);
     font-weight: 700;
-    font-family: "Heebo", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 15px;
     transition: outline 0.3s ease;
 
