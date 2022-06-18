@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { BasicTextModuleStyles } from "../BasicTextModule/BasicTextModuleStyles"
 
@@ -11,18 +12,28 @@ const TenCommittees = () => {
     margin: "0 auto",
   }
 
+  const CommitteeImage = (
+    <div
+      style={{
+        width: "150px",
+        height: "150px",
+        backgroundColor: "var(--bodyColor)",
+        padding: "10px",
+      }}
+    >
+      <StaticImage
+        alt="HOC Committee"
+        src="../../../static/committee/HOC.svg"
+        layout="constrained"
+        placeholder="tracedSVG"
+      />
+    </div>
+  )
+
   return (
     <BasicTextModuleStyles className="section">
       <div style={comContainerStyles}>
-        {committees.map((c) => (
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-              backgroundColor: "white",
-            }}
-          ></div>
-        ))}
+        {committees.map((c) => CommitteeImage)}
       </div>
 
       <div
@@ -56,15 +67,7 @@ const TenCommittees = () => {
       </div>
 
       <div style={comContainerStyles}>
-        {committees.map((c) => (
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-              backgroundColor: "white",
-            }}
-          ></div>
-        ))}
+        {committees.map((c) => CommitteeImage)}
       </div>
     </BasicTextModuleStyles>
   )
