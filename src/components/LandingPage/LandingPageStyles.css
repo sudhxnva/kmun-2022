@@ -1,0 +1,56 @@
+h1 {
+    font-weight: 900;
+}
+
+/* What is KMUN */
+
+.kmun-inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kmun-desc-inner-container {
+    width: 90% !important;
+}
+
+.kmun-desc-inner-container p {
+     padding-bottom: 20px;
+ }
+
+.kmun-desc-heading {
+    font-size: 80px;
+}
+
+.kmun-desc-heading span {
+    font-size: 160px;
+}
+
+.diamond-image {
+    width: 80% !important;
+    position: relative;
+}
+
+.diamond-underlay {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin: 25px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+    right: -20%;
+    top: 10%
+}
+
+.hello {
+    position: absolute;
+    z-index: 10;
+}
+
+.diamond-bg {
+    background: var(--bodyColor);
+    width: 600px;
+    height: 600px
+}
+
