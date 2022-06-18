@@ -2396,6 +2396,11 @@
   resolved "https://registry.yarnpkg.com/@turist/time/-/time-0.0.2.tgz#32fe0ce708ea0f4512776bd313409f1459976dda"
   integrity sha512-qLOvfmlG2vCVw5fo/oz8WAZYlpe5a5OurgTj3diIxJCdjRHpapC+vQCz3er9LV79Vcat+DifBjeAhOAdmndtDQ==
 
+"@typeform/embed@^1.36.0":
+  version "1.36.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.36.0.tgz#609351546ac41856584112b0992f00aeb85e8103"
+  integrity sha512-7T+xbbGw7/o6bOOuMHrD7scwvl+YiJmYIiUP7YOGlyzA5BPSGt3wQx9M+J8D/X12MhgFNX4kgkwhPNyiALXxIg==
+
 "@types/cacheable-request@^6.0.1":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@types/cacheable-request/-/cacheable-request-6.0.2.tgz#c324da0197de0a98a2312156536ae262429ff6b9"
