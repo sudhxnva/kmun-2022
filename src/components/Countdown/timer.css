@@ -1,0 +1,173 @@
+#countdown {
+    width: 250px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#countdown .box {
+    padding: 10px;
+}
+
+#countdown .col-4:last-child .box {
+    border-right-color: transparent;
+}
+
+#countdown .box p {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#countdown .box .text {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.title {
+    letter-spacing: 8px;
+    color: #C0B1F4;
+}
+
+.title span {
+    font-weight: 600;
+}
+
+.title-container {
+    margin-top: 15%;
+}
+
+.info-container {
+    margin-top: 4%
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.col-4 {
+    width: 25%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .countdown-container {
+        width: 1100px;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #countdown {
+        width: 325px;
+         padding-top: 5%;
+    }
+
+    #countdown .box p {
+        font-size: 56px;
+        line-height: 50px;
+    }
+
+    .title {
+        letter-spacing: 4px;
+        font-size: 11px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .title-container {
+        margin-top: 20%;
+    }
+
+    .info-container {
+        margin-top: 9%;
+    }
+
+    #countdown .box .text {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #countdown {
+        width: 600px;
+         padding-top: 5%;
+    }
+
+    #countdown .box p {
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    .title {
+        letter-spacing: 4px;
+        font-size: 12px;
+    }
+
+    .title-container {
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #countdown {
+        width: 600px;
+         padding-top: 5%;
+    }
+
+    #countdown .box p {
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    .title {
+        letter-spacing: 5px;
+        font-size: 13px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+    #countdown {
+        width: 800px;
+         padding-top: 5%;
+    }
+
+    #countdown .box p {
+        font-size: 140px;
+        line-height: 160px;
+    }
+
+    .title {
+        letter-spacing: 6px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #countdown {
+        width: 1100px;
+         padding-top: 5%;
+    }
+
+    #countdown .box p {
+        font-size: 180px;
+        line-height: 220px;
+    }
+
+    .title {
+        letter-spacing: 7px;
+        font-size: 16px;
+    }
+
+}
