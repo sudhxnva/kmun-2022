@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const ContactStyles = styled.section`
+export const CommitteeStyles = styled.section`
   max-width: 750px;
   box-sizing: content-box;
   margin-left: auto;

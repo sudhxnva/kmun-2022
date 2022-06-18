@@ -12,7 +12,7 @@ export const menuItems = [
     text: "register",
   },
   {
-    path: "/about-us",
+    path: "/about",
     text: "about",
   },
 ]
