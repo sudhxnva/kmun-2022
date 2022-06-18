@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import Seo from "../components/SEO"
 import BannerModule from "../components/BannerModule/BannerModule"
 import Countdown from "../components/Countdown/Countdown"
+import WhatIsKMUN from "../components/LandingPage/WhatIsKMUN"
+import SocialCause from "../components/LandingPage/SocialCause"
 
 const Index = () => {
   return (
@@ -11,6 +13,8 @@ const Index = () => {
       <Layout>
         <BannerModule title="REKINDLE THE FLAME" />
         <Countdown />
+        <WhatIsKMUN link="/register" linkText="Register Now" />
+        <SocialCause />
       </Layout>
     </>
   )
