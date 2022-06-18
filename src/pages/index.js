@@ -6,6 +6,7 @@ import Countdown from "../components/Countdown/Countdown"
 import WhatIsKMUN from "../components/LandingPage/WhatIsKMUN"
 import SocialCause from "../components/LandingPage/SocialCause"
 import TenCommittees from "../components/LandingPage/TenCommittees"
+import Sponsors from "../components/LandingPage/Sponsors"
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <WhatIsKMUN link="/register" linkText="Register Now" />
         <SocialCause />
         <TenCommittees />
+        <Sponsors />
       </Layout>
     </>
   )
