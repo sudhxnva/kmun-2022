@@ -9,16 +9,17 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Kumarans Model United Nations",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
-    twitterUsername: "barcadia",
-    facebookUsername: "barcadia",
-    instagramUsername: "barcadia",
-    linkedinUsername: "morgan-baker-development",
-    image: "/macbook-color.jpg",
-    siteUrl: "https://barcadia.netlify.com",
-    developerName: "Morgan Baker Development",
-    developerUrl: "https://www.morganbaker.dev",
+    description:
+      "The 10th edition of one of the largest school MUNs in Bangalore - Kumarans Model United Nations 2022",
+    author: "Kumarans",
+    twitterUsername: "",
+    facebookUsername: "KumaransMUN",
+    instagramUsername: "kumaransmun",
+    linkedinUsername: "",
+    image: "/image-2.jpg",
+    siteUrl: "https://kmun.in",
+    developerName: "",
+    developerUrl: "",
   },
   /* Your site config here */
   plugins: [
