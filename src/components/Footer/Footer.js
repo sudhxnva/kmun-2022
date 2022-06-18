@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { menuItems } from "../../constants/links"
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
-import useAllProduct from "../../hooks/use-all-product"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import {
   FaFacebookSquare as Facebook,
@@ -12,11 +11,10 @@ import {
 } from "react-icons/fa"
 
 const Footer = () => {
-  const allProduct = useAllProduct()
   const siteMeta = UseSiteMetadata()
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
-      <div className="container container__tight">
+      <div className="container container__tight" style={{ minWidth: "100%" }}>
         <FooterMenuStyles className="footer__menu">
           <h5>Links</h5>
           <ul>
@@ -32,39 +30,19 @@ const Footer = () => {
             })}
           </ul>
         </FooterMenuStyles>
-        {allProduct.length > 0 && (
-          <FooterMenuStyles className="footer__menu products__menu">
-            <h5>
-              <Link to="/products">
-                All Products<span>.</span>
-              </Link>
-            </h5>
-            <ul>
-              {allProduct.map((item, index) => {
-                const { gatsbyPath, title } = item
-
-                return (
-                  <li key={index}>
-                    <Link to={gatsbyPath}>
-                      {title}
-                      <span>.</span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </FooterMenuStyles>
-        )}
 
         {siteMeta.twitterUsername ||
         siteMeta.facebookUsername ||
         siteMeta.instagramUsername ||
         siteMeta.linkedinUsername ? (
-          <FooterMenuStyles className="footer__menu social__menu">
+          <FooterMenuStyles
+            className="footer__menu social__menu"
+            style={{ textAlign: "right" }}
+          >
             <h5>
-              Follow Barcadia<span>.</span>
+              Follow KMUN<span>.</span>
             </h5>
-            <ul>
+            <ul style={{ justifyContent: "flex-end" }}>
               {siteMeta.twitterUsername && (
                 <li>
                   <a
@@ -115,21 +93,23 @@ const Footer = () => {
           ""
         )}
       </div>
-      <CopyrightStyles>
-        <div className="container container__tight">
-          <p>
-            Designed & developed by{" "}
-            <a
-              href={siteMeta.developerUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {siteMeta.developerName}
-            </a>
-            <span>.</span>
-          </p>
-        </div>
-      </CopyrightStyles>
+      {siteMeta.developerName && (
+        <CopyrightStyles>
+          <div className="container container__tight">
+            <p>
+              Designed & developed by{" "}
+              <a
+                href={siteMeta.developerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {siteMeta.developerName}
+              </a>
+              <span>.</span>
+            </p>
+          </div>
+        </CopyrightStyles>
+      )}
     </FooterStyles>
   )
 }
