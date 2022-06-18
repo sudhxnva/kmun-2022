@@ -75,7 +75,7 @@ export const FooterMenuStyles = styled.div`
     &:hover,
     &:focus {
       a {
-        color: var(--primary);
+        color: var(--white);
       }
     }
   }

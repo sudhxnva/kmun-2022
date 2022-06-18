@@ -77,9 +77,7 @@ const NavModule = () => {
                 onKeyDown={toggleNav}
                 to={item.path}
                 activeClassName="menu__item--active"
-                style={{
-                  color: item.text === "Register" ? "var(--inActive)" : "",
-                }}
+                className={item.text === "Register" ? "register--item" : ""}
               >
                 {item.text}
                 <span>.</span>

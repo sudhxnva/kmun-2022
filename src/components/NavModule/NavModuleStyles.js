@@ -60,6 +60,10 @@ export const NavTopLevel = styled.ul`
       color: #fff;
     }
 
+    a.register--item {
+      color: var(--inActive);
+    }
+
     span {
       color: var(--primary);
     }
@@ -85,7 +89,7 @@ export const NavTopLevel = styled.ul`
     padding: 0;
     color: #fff;
     border: none;
-    font-family: "Heebo", sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
   }
