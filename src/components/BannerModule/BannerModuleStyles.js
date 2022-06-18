@@ -41,14 +41,9 @@ export const BannerModuleStyles = styled.section`
       width: 66vw;
     }
 
-    h1,
-    h2 {
-      text-shadow: var(--textShadow);
-    }
-
     h1 {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.15);
       display: inline-block;
+      font-weight: 900;
     }
 
     h2 {

@@ -7,10 +7,11 @@ export const GlobalStyle = createGlobalStyle`
   --borderSpacing: 30px;
   --menuWidth: 100vw;
   --blockquote: 20px;
-  --background: #1b1b1b;
-  --primary: #E7A9D4;
-  --bodyColor: #afc2cb;
-  --inActive: #555;
+  --background: #191927;
+  --background-secondary: #61447E;
+  --primary: #C7BAF5;
+  --bodyColor: #E2C3D1;
+  --inActive: #E7A9D4;
   --letterSpacing: -0.075rem;
   --boxShadow: 0px 15px 22px 3px rgba(0, 0, 0, 0.55);
   --textShadow: 0px 0px 5px rgba(0, 0, 0, 1);
@@ -43,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @media(min-width:768px) {
-    --bannerTitle: 46px;    
+    --bannerTitle: 96px;    
     --blockquote: 26px;
     --p: 15px;
     --h2: 30px;
