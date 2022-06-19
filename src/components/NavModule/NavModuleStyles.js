@@ -6,7 +6,7 @@ export const NavModuleStyles = styled.nav`
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
     padding: 20px var(--borderSpacing) 0 var(--borderSpacing);
     padding-top: 50px;
@@ -164,6 +164,13 @@ export const LogoStyles = styled.div`
   font-weight: 700;
   font-size: 20px;
   letter-spacing: -0.5px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    text-align: right;
+    width: 50vw;
+  }
 
   a {
     color: #fff;

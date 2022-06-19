@@ -9,7 +9,17 @@ export const CountdownDiv = styled.section`
 
   .dates {
     text-align: center;
+    margin: 0 auto;
     margin-top: 5%;
+    width: 100%;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+      width: 50vw;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+      width: 60vw;
+    }
 
     > span.highlight {
       color: var(--bodyColor);
@@ -38,6 +48,8 @@ export const CountdownDiv = styled.section`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+      width: 100%;
+
       > h1 {
         font-size: 2.5rem;
       }
@@ -170,7 +182,7 @@ export const CountdownDiv = styled.section`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     #countdown {
-      width: 70vw;
+      width: 85vw;
       padding-top: 5%;
 
       .box p {

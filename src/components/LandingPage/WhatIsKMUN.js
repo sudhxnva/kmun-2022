@@ -1,13 +1,12 @@
 import React from "react"
 import ButtonFilled from "../Button/ButtonFilled"
-import { BasicTextModuleStyles } from "../BasicTextModule/BasicTextModuleStyles"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import "./LandingPageStyles.css"
+import { KMUNIntroStyles } from "./LandingPageStyles"
 
 const WhatIsKMUN = ({ title, content, link, linkText }) => {
   return (
-    <BasicTextModuleStyles className="section">
+    <KMUNIntroStyles className="section">
       <div className="container container__tight kmun-inner-container">
         <div className="kmun-desc-inner-container">
           <h1 className="kmun-desc-heading">
@@ -28,7 +27,7 @@ const WhatIsKMUN = ({ title, content, link, linkText }) => {
 
           <ButtonFilled text={linkText} as={Link} to={link} />
         </div>
-        <div className="diamond-image">
+        <div className="desc-image">
           <StaticImage
             alt="HOC Committee"
             src="../../../static/auditorium-1-masked.png"
@@ -36,12 +35,9 @@ const WhatIsKMUN = ({ title, content, link, linkText }) => {
             placeholder="tracedSVG"
             className="hello"
           />
-          <div className="diamond-underlay">
-            <div className="diamond-bg"></div>
-          </div>
         </div>
       </div>
-    </BasicTextModuleStyles>
+    </KMUNIntroStyles>
   )
 }
 

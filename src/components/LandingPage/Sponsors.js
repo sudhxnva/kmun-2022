@@ -33,7 +33,7 @@ const Sponsors = () => {
             placeholder="tracedSVG"
             style={{ alignSelf: "center", width: "70%" }}
           />
-          <p style={{ paddingTop: "4%" }}>Title Sponsor</p>
+          {/* <p style={{ paddingTop: "4%" }}>Title Sponsor</p> */}
         </div>
       </div>
     </BasicTextModuleStyles>

@@ -86,9 +86,9 @@ export default function Countdown() {
           </div>
         </div>
       </div>
-      <div className="container container__tight dates">
+      <div className="dates">
         <span>Mark your calendars for the </span>
-        <span class="highlight">6th, 7th and 8th of July.</span>
+        <span className="highlight">6th, 7th and 8th of July.</span>
       </div>
     </CountdownDiv>
   )
