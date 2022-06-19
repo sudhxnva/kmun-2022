@@ -1,5 +1,5 @@
 import React from "react"
-import { BasicTextModuleStyles } from "../BasicTextModule/BasicTextModuleStyles"
+import { SocialCauseStyles } from "./LandingPageStyles"
 
 const SocialCause = ({ title, content, link, linkText }) => {
   const headerStyle = {
@@ -9,30 +9,15 @@ const SocialCause = ({ title, content, link, linkText }) => {
     color: "var(--inActive)",
   }
   return (
-    <BasicTextModuleStyles
-      className="section"
-      style={{
-        backgroundColor: "var(--background-secondary)",
-        paddingTop: "10%",
-        paddingBottom: "10%",
-      }}
-    >
-      <div
-        className="container container__tight"
-        style={{
-          display: "grid",
-          gridAutoFlow: "column",
-          maxWidth: "90%",
-          alignItems: "center",
-        }}
-      >
-        <div>
-          <span style={headerStyle}>SOCIAL</span>
+    <SocialCauseStyles className="section">
+      <div className="sc-container">
+        <div className="sc-heading-container">
+          <h1 className="sc-heading">SOCIAL</h1>
           <br />
-          <span style={{ ...headerStyle, fontSize: "200px" }}>CAUSE</span>
+          <h1 className="sc-heading larger">CAUSE</h1>
         </div>
-        <div>
-          <p style={{ paddingLeft: "10%" }}>
+        <div className="sc-description">
+          <p>
             This year, KMUN is making provisions to aid students of underserved
             communities to also participate apart from a wide array of school
             students across Bengaluru, encompassing various relevant global
@@ -41,7 +26,7 @@ const SocialCause = ({ title, content, link, linkText }) => {
           </p>
         </div>
       </div>
-    </BasicTextModuleStyles>
+    </SocialCauseStyles>
   )
 }
 

@@ -57,7 +57,7 @@ const TenCommittees = () => {
         <div style={{ alignSelf: "center" }}>
           <p style={{ fontSize: "80px", color: "var(--primary)" }}>
             {" "}
-            th Edition
+            th EDITION
           </p>
           <p style={{ fontSize: "80px", color: "var(--primary)" }}>
             COMMITTEES
