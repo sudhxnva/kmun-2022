@@ -16,7 +16,7 @@ export default function Countdown() {
     setTimerInterval(setInterval(count, 1000))
 
     return () => {
-      clearInterval(timerInterval)
+      if (timerInterval) clearInterval(timerInterval)
     }
     // eslint-disable-next-line
   }, [])

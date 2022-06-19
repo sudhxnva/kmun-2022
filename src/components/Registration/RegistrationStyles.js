@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const RegistrationStyles = styled.section`
-  max-width: 1300px;
   box-sizing: content-box;
   margin-left: auto;
   margin-right: auto;
@@ -9,5 +8,15 @@ export const RegistrationStyles = styled.section`
   h1 {
     font-weight: 900;
     font-size: 50px;
+
+    @media (max-width: 576px) {
+      font-size: 30px;
+      padding-top: 15%;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+      padding-top: 10%;
+    }
   }
 `

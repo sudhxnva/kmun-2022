@@ -2,12 +2,6 @@ import React from "react"
 import { SocialCauseStyles } from "./LandingPageStyles"
 
 const SocialCause = ({ title, content, link, linkText }) => {
-  const headerStyle = {
-    fontSize: "180px",
-    fontWeight: "900",
-    lineHeight: "170px",
-    color: "var(--inActive)",
-  }
   return (
     <SocialCauseStyles className="section">
       <div className="sc-container">

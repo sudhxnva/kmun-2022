@@ -114,8 +114,6 @@ export const KMUNIntroStyles = styled.section`
 `
 export const SocialCauseStyles = styled.section`
   background-color: var(--background-secondary);
-  padding-top: 15%;
-  padding-bottom: 15%;
 
   h1 {
     font-weight: 900;
@@ -127,6 +125,8 @@ export const SocialCauseStyles = styled.section`
     grid-auto-flow: column;
     max-width: 90%;
     align-items: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
   }
 
   .sc-heading {
@@ -141,6 +141,26 @@ export const SocialCauseStyles = styled.section`
   .sc-description {
     align-self: center;
     justify-self: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    .sc-container {
+      grid-auto-flow: row;
+    }
+    .sc-heading {
+      font-size: 4.2rem;
+      line-height: 2rem;
+    }
+    .sc-heading.larger {
+      font-size: 4.7rem;
+    }
+
+    .sc-description {
+      padding-top: 10%;
+      padding-left: 0;
+      font-size: 1.05rem;
+      text-align: center;
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
@@ -240,6 +260,139 @@ export const SocialCauseStyles = styled.section`
 
     .sc-heading.larger {
       font-size: 10rem;
+    }
+  }
+`
+
+export const CommitteeStyles = styled.section`
+  h1 {
+    font-weight: 900;
+  }
+
+  .com-text-container {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    margin: 0 auto;
+  }
+
+  .com-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .com-image-container {
+    width: 15vw;
+    height: 15vw;
+    background-color: var(--bodyColor);
+    padding: 10px;
+  }
+
+  .com-text {
+    align-self: center;
+    > h1 {
+      font-size: 5rem;
+      color: var(--primary);
+    }
+  }
+
+  .com-10 {
+    font-size: 19rem;
+    justify-self: end;
+    line-height: 17rem;
+    color: var(--primary);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    .com-10 {
+      font-size: 17rem;
+      line-height: 15rem;
+    }
+
+    .com-text > h1 {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    .com-10 {
+      font-size: 13rem;
+      line-height: 11rem;
+    }
+
+    .com-text > h1 {
+      font-size: 2.8rem;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    .com-10 {
+      font-size: 7rem;
+      line-height: 7rem;
+    }
+
+    .com-text > h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    .com-10 {
+      font-size: 6.5rem;
+      line-height: 6rem;
+    }
+
+    .com-text > h1 {
+      font-size: 1.5rem;
+    }
+  }
+`
+
+export const SponsorStyles = styled.section`
+  .sponsor-heading {
+    font-size: 9rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  .sponsor-heading {
+    @media (max-width: ${({ theme }) => theme.breakpoints.xxl}) {
+      font-size: 7rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+      font-size: 3.5rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+      font-size: 1.7rem;
+    }
+  }
+
+  .tvs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 50vw;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      width: 70%;
     }
   }
 `

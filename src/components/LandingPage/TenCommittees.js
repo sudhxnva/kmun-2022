@@ -1,30 +1,15 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import { BasicTextModuleStyles } from "../BasicTextModule/BasicTextModuleStyles"
+import { CommitteeStyles } from "./LandingPageStyles"
 
 const committees = [0, 0, 0, 0, 0]
 
 const TenCommittees = () => {
-  const comContainerStyles = {
-    display: "flex",
-    justifyContent: "space-between",
-    width: "90%",
-    margin: "0 auto",
-  }
-
   return (
-    <BasicTextModuleStyles className="section">
-      <div style={comContainerStyles}>
+    <CommitteeStyles className="section">
+      <div className="com-container">
         {committees.map((c, idx) => (
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-              backgroundColor: "var(--bodyColor)",
-              padding: "10px",
-            }}
-            key={idx}
-          >
+          <div className="com-image-container" key={idx}>
             <StaticImage
               alt="HOC Committee"
               src="../../../static/committee/HOC.svg"
@@ -35,47 +20,17 @@ const TenCommittees = () => {
         ))}
       </div>
 
-      <div
-        className="container container__tight"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "3fr 4fr",
-          fontWeight: "900",
-        }}
-      >
-        <h1
-          style={{
-            fontSize: "300px",
-            justifySelf: "end",
-            fontWeight: "900",
-            lineHeight: "280px",
-            color: "var(--primary)",
-          }}
-        >
-          10
-        </h1>
-        <div style={{ alignSelf: "center" }}>
-          <p style={{ fontSize: "80px", color: "var(--primary)" }}>
-            {" "}
-            th EDITION
-          </p>
-          <p style={{ fontSize: "80px", color: "var(--primary)" }}>
-            COMMITTEES
-          </p>
+      <div className="com-text-container">
+        <h1 className="com-10">10</h1>
+        <div className="com-text">
+          <h1> th EDITION</h1>
+          <h1>COMMITTEES</h1>
         </div>
       </div>
 
-      <div style={comContainerStyles}>
+      <div className="com-container">
         {committees.map((c, idx) => (
-          <div
-            style={{
-              width: "150px",
-              height: "150px",
-              backgroundColor: "var(--bodyColor)",
-              padding: "10px",
-            }}
-            key={idx}
-          >
+          <div className="com-image-container" key={idx}>
             <StaticImage
               alt="HOC Committee"
               src="../../../static/committee/HOC.svg"
@@ -85,7 +40,7 @@ const TenCommittees = () => {
           </div>
         ))}
       </div>
-    </BasicTextModuleStyles>
+    </CommitteeStyles>
   )
 }
 

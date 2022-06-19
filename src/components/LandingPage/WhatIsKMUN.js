@@ -30,10 +30,10 @@ const WhatIsKMUN = ({ title, content, link, linkText }) => {
         <div className="desc-image">
           <StaticImage
             alt="HOC Committee"
-            src="../../../static/auditorium-1-masked.png"
+            src="../../../static/auditorium-1-masked-2.png"
             layout="constrained"
             placeholder="tracedSVG"
-            className="hello"
+            className="tvs"
           />
         </div>
       </div>
