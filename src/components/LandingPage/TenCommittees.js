@@ -12,28 +12,27 @@ const TenCommittees = () => {
     margin: "0 auto",
   }
 
-  const CommitteeImage = (
-    <div
-      style={{
-        width: "150px",
-        height: "150px",
-        backgroundColor: "var(--bodyColor)",
-        padding: "10px",
-      }}
-    >
-      <StaticImage
-        alt="HOC Committee"
-        src="../../../static/committee/HOC.svg"
-        layout="constrained"
-        placeholder="tracedSVG"
-      />
-    </div>
-  )
-
   return (
     <BasicTextModuleStyles className="section">
       <div style={comContainerStyles}>
-        {committees.map((c) => CommitteeImage)}
+        {committees.map((c, idx) => (
+          <div
+            style={{
+              width: "150px",
+              height: "150px",
+              backgroundColor: "var(--bodyColor)",
+              padding: "10px",
+            }}
+            key={idx}
+          >
+            <StaticImage
+              alt="HOC Committee"
+              src="../../../static/committee/HOC.svg"
+              layout="constrained"
+              placeholder="tracedSVG"
+            />
+          </div>
+        ))}
       </div>
 
       <div
@@ -67,7 +66,24 @@ const TenCommittees = () => {
       </div>
 
       <div style={comContainerStyles}>
-        {committees.map((c) => CommitteeImage)}
+        {committees.map((c, idx) => (
+          <div
+            style={{
+              width: "150px",
+              height: "150px",
+              backgroundColor: "var(--bodyColor)",
+              padding: "10px",
+            }}
+            key={idx}
+          >
+            <StaticImage
+              alt="HOC Committee"
+              src="../../../static/committee/HOC.svg"
+              layout="constrained"
+              placeholder="tracedSVG"
+            />
+          </div>
+        ))}
       </div>
     </BasicTextModuleStyles>
   )

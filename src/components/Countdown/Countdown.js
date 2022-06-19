@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-import "./timer.css"
-import { BasicTextModuleStyles } from "../BasicTextModule/BasicTextModuleStyles"
+import { CountdownDiv } from "./CountdownStyles"
 
 export default function Countdown() {
   const deadline = new Date("Jul 06, 2022 10:00:00").getTime()
@@ -54,23 +53,10 @@ export default function Countdown() {
 
   const { days, seconds, hours, minutes } = time
   return (
-    <BasicTextModuleStyles className="section">
-      <div
-        className="container"
-        style={{
-          textAlign: "center",
-          lineHeight: "20px",
-          width: "70%",
-        }}
-      >
-        <h1>
-          <span style={{ fontSize: "140px", fontWeight: "900" }}>
-            COUNTDOWN
-          </span>
-        </h1>
-        <span style={{ fontSize: "89px", fontWeight: "900" }}>
-          TO THE CONFERENCE
-        </span>
+    <CountdownDiv className="section">
+      <div className="container">
+        <h1>COUNTDOWN</h1>
+        <span className="text-lg">TO THE CONFERENCE</span>
       </div>
       <div className="countdown-container">
         <div id="countdown">
@@ -100,15 +86,10 @@ export default function Countdown() {
           </div>
         </div>
       </div>
-      <div
-        className="container container__tight"
-        style={{ textAlign: "center", marginTop: "5%" }}
-      >
+      <div className="container container__tight dates">
         <span>Mark your calendars for the </span>
-        <span style={{ color: "var(--bodyColor)", fontWeight: "700" }}>
-          6th, 7th and 8th of July.
-        </span>
+        <span class="highlight">6th, 7th and 8th of July.</span>
       </div>
-    </BasicTextModuleStyles>
+    </CountdownDiv>
   )
 }

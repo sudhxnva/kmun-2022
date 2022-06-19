@@ -46,6 +46,36 @@ export const BannerModuleStyles = styled.section`
       font-weight: 900;
     }
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+
     h2 {
       font-size: var(--h5);
       font-weight: 400;
@@ -54,7 +84,6 @@ export const BannerModuleStyles = styled.section`
     h1,
     .price {
       margin-top: 0;
-      font-size: var(--bannerTitle);
     }
   }
 
