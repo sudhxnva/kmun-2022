@@ -4,10 +4,12 @@ import AnimMain from "./AnimMain/AnimMain"
 import Footer from "./Footer/Footer"
 import { motion } from "framer-motion"
 import { GlobalStyle } from "../styles/GlobalStyles"
+import { ThemeProvider } from "styled-components"
+import theme from "../styles/theme"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <motion.div
         initial={{ opacity: 0 }}
@@ -21,7 +23,7 @@ const Layout = ({ children }) => {
           <Footer />
         </AnimMain>
       </motion.div>
-    </>
+    </ThemeProvider>
   )
 }
 

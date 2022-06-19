@@ -15,7 +15,6 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
             src="../../../static/image-2.png"
             alt="Banner Image"
             layout="fullWidth"
-            placeholder="blurred"
           />
         )}
 

@@ -9,10 +9,7 @@ export const NavModuleStyles = styled.nav`
     width: 100%;
     z-index: 100;
     padding: 20px var(--borderSpacing) 0 var(--borderSpacing);
-
-    @media (min-width: 1024px) {
-      padding-top: 50px;
-    }
+    padding-top: 50px;
 
     @media (min-width: 1440px) {
       padding-top: 70px;
