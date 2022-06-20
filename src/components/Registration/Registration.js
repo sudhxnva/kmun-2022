@@ -58,7 +58,7 @@ const Registration = () => {
 
       <h2 className="reg-title">REGISTER BELOW</h2>
 
-      <div ref={form} className="reg-form"></div>
+      <div ref={form} style={{ width: "100%", height: "70vh" }}></div>
     </RegistrationStyles>
   )
 }
