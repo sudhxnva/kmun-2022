@@ -394,5 +394,9 @@ export const SponsorStyles = styled.section`
     @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
       width: 70%;
     }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.xxl}) {
+      width: 43vw;
+    }
   }
 `
