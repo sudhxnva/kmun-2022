@@ -7,6 +7,7 @@ import WhatIsKMUN from "../components/LandingPage/WhatIsKMUN"
 import SocialCause from "../components/LandingPage/SocialCause"
 import TenCommittees from "../components/LandingPage/TenCommittees"
 import Sponsors from "../components/LandingPage/Sponsors"
+import Prize from "../components/LandingPage/Prize"
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <WhatIsKMUN link="/register" linkText="Register Now" />
         <SocialCause />
         <TenCommittees />
+        <Prize />
         <Sponsors />
       </Layout>
     </>

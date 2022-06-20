@@ -400,3 +400,117 @@ export const SponsorStyles = styled.section`
     }
   }
 `
+
+export const PrizeStyles = styled.section`
+  h1,
+  h2 {
+    font-weight: 900;
+  }
+
+  .prize-container {
+    display: grid;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .prize-text {
+    color: var(--inActive);
+  }
+
+  .prize-text-sm {
+    color: var(--primary);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    .prize-text-sm,
+    .prize-text {
+      justify-self: center;
+    }
+
+    .prize-text {
+      font-size: 3.2rem;
+      line-height: 2rem;
+    }
+
+    .prize-text-sm {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    .prize-text-sm,
+    .prize-text {
+      justify-self: center;
+    }
+
+    .prize-text {
+      font-size: 4rem;
+      line-height: 2rem;
+    }
+
+    .prize-text-sm {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    .prize-text {
+      font-size: 6rem;
+      line-height: 3rem;
+    }
+
+    .prize-text-sm {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    .prize-text {
+      font-size: 8rem;
+      line-height: 5rem;
+    }
+
+    .prize-text-sm {
+      font-size: 5rem;
+    }
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    .prize-text {
+      font-size: 10rem;
+      line-height: 6rem;
+    }
+
+    .prize-text-sm {
+      font-size: 6rem;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+    .prize-text {
+      font-size: 12rem;
+      line-height: 7rem;
+    }
+
+    .prize-text-sm {
+      font-size: 4.5rem;
+    }
+
+    .prize-text-1 {
+      justify-self: left;
+    }
+    .prize-text-2 {
+      justify-self: right;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xxl}) {
+    .prize-text {
+      font-size: 15rem;
+      line-height: 7rem;
+      justify-self: center;
+    }
+
+    .prize-text-sm {
+      font-size: 4rem;
+    }
+  }
+`
