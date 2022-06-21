@@ -37,6 +37,22 @@ export const NavModuleStyles = styled.nav`
     display: flex;
     align-items: center;
   }
+
+  .nav-overlay {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 150px;
+    z-index: -1;
+    background: linear-gradient(#0c0c0cdb, #00000000);
+  }
+
+  @media (max-width: 560px) {
+    .nav-overlay {
+      height: 120px;
+    }
+  }
 `
 
 export const NavTopLevel = styled.ul`

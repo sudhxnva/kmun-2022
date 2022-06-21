@@ -1,4 +1,5 @@
-import React, { useContext } from "react"
+import React, { useState, useEffect, useContext } from "react"
+import { debounce } from "../../util/debounce"
 import { Link } from "gatsby"
 import MenuContext from "../MenuContext"
 import { motion } from "framer-motion"
@@ -20,6 +21,27 @@ import {
 const NavModule = () => {
   const [isOpen, setNav] = useContext(MenuContext)
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    )
+
+    setPrevScrollPos(currentScrollPos)
+  }, 100)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [prevScrollPos, visible, handleScroll])
+
   const toggleNav = () => {
     setNav((isOpen) => !isOpen)
   }
@@ -28,7 +50,11 @@ const NavModule = () => {
 
   return (
     <NavModuleStyles>
-      <div className="nav">
+      <div
+        className="nav"
+        style={{ transition: "top 0.3s", top: visible ? "0" : "-100px" }}
+      >
+        <div className="nav-overlay"></div>
         <div className="container">
           <HamburgerStyles
             initial="closed"
@@ -62,6 +88,7 @@ const NavModule = () => {
           )}
         </div>
       </div>
+
       <motion.div
         initial="closed"
         animate={isOpen ? "open" : "closed"}

@@ -23,7 +23,6 @@ export default function Countdown() {
   }
 
   const count = () => {
-    console.log("counting")
     const now = new Date().getTime()
     const timeLeft = deadline - now
     const dd = Math.floor(timeLeft / (1000 * 60 * 60 * 24))
