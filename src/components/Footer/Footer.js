@@ -88,6 +88,7 @@ const Footer = () => {
                 </li>
               )}
             </ul>
+            <span className="footer-email">support@kmun.in</span>
           </FooterMenuStyles>
         ) : (
           ""

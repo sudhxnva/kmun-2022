@@ -7,7 +7,10 @@ const CommitteeCard = ({ data }) => {
       <div className="comm-intro-grid">
         <div className="comm-img-container">
           {data.committeeLogo.gatsbyImageData ? (
-            <GatsbyImage image={data.committeeLogo.gatsbyImageData} />
+            <GatsbyImage
+              image={data.committeeLogo.gatsbyImageData}
+              alt={data.committeeName + " committee logo"}
+            />
           ) : (
             <img
               src={data.committeeLogo.url}
@@ -27,7 +30,10 @@ const CommitteeCard = ({ data }) => {
       <div className="dais">
         <div className="eb-member">
           <div className="eb-img">
-            <GatsbyImage image={data.chairpersonImage.gatsbyImageData} />
+            <GatsbyImage
+              image={data.chairpersonImage.gatsbyImageData}
+              alt="Chair picture"
+            />
           </div>
           <div className="eb-text">
             <span className="eb-title"> {data.chairpersonName}</span>
@@ -36,7 +42,10 @@ const CommitteeCard = ({ data }) => {
         </div>
         <div className="eb-member">
           <div className="eb-img">
-            <GatsbyImage image={data.viceChairImage.gatsbyImageData} />
+            <GatsbyImage
+              image={data.viceChairImage.gatsbyImageData}
+              alt="Vice-Chair picture"
+            />
           </div>
           <div className="eb-text">
             <span className="eb-title">{data.viceChairName}</span>
@@ -45,7 +54,10 @@ const CommitteeCard = ({ data }) => {
         </div>
         <div className="eb-member">
           <div className="eb-img">
-            <GatsbyImage image={data.modImage.gatsbyImageData} />
+            <GatsbyImage
+              image={data.modImage.gatsbyImageData}
+              alt="Moderator picture"
+            />
           </div>
           <div className="eb-text">
             <span className="eb-title">{data.modName}</span>

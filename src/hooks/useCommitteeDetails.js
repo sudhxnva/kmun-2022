@@ -8,6 +8,7 @@ const useCommitteeDetails = () => {
       allContentfulCommittee {
         nodes {
           id
+          crisis
           committeeName
           committeeDescription {
             committeeDescription

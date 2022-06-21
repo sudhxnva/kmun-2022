@@ -253,6 +253,14 @@ export const CommitteesStyles = styled.section`
       font-size: 1rem;
     }
 
+    .dais {
+      padding-top: 5%;
+    }
+
+    .eb-img {
+      width: 180px;
+    }
+
     .comm-card {
       padding-top: 0;
     }
