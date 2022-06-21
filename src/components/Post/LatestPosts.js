@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import PostItems from "./PostItems"
 import PostItem from "./PostItem"
-import useLatestBlogPost from "../../hooks/use-latest-blog-post"
+// import useLatestBlogPost from "../../hooks/use-latest-blog-post"
 import Button from "../Button/Button"
 
 const LatestPosts = ({ title, introduction }) => {
-  const latestBlogPost = useLatestBlogPost()
+  const latestBlogPost = []
   return (
     <div className="section">
       <div className="container container__tight">

@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
+        host: "https://kmun.in",
+        sitemap: "https://kmun.in/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
