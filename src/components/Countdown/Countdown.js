@@ -4,7 +4,6 @@ import { CountdownDiv } from "./CountdownStyles"
 
 export default function Countdown() {
   const deadline = new Date("Jul 06, 2022 10:00:00").getTime()
-  const [timerInterval, setTimerInterval] = useState()
   const [time, setTime] = useState({
     days: 0,
     minutes: 0,
@@ -13,11 +12,9 @@ export default function Countdown() {
   })
 
   useEffect(() => {
-    setTimerInterval(setInterval(count, 1000))
+    const intervalId = setInterval(count, 1000)
 
-    return () => {
-      if (timerInterval) clearInterval(timerInterval)
-    }
+    return () => clearInterval(intervalId)
     // eslint-disable-next-line
   }, [])
 
@@ -26,6 +23,7 @@ export default function Countdown() {
   }
 
   const count = () => {
+    console.log("counting")
     const now = new Date().getTime()
     const timeLeft = deadline - now
     const dd = Math.floor(timeLeft / (1000 * 60 * 60 * 24))
@@ -41,7 +39,6 @@ export default function Countdown() {
     })
 
     if (timeLeft < 0) {
-      clearInterval(timerInterval)
       setTime({
         days: 0,
         minutes: 0,
