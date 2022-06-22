@@ -1,20 +1,22 @@
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
+import useCommitteeDetails from "../../hooks/useCommitteeDetails"
 import { CommitteeStyles } from "./LandingPageStyles"
 
-const committees = [0, 0, 0, 0, 0]
-
 const TenCommittees = () => {
+  const committees = useCommitteeDetails()
+  const topFive = committees.slice(0, 5)
+  const bottomFive = committees.slice(5)
+  console.log(topFive, bottomFive)
+
   return (
     <CommitteeStyles className="section">
       <div className="com-container">
-        {committees.map((c, idx) => (
+        {topFive.map((c, idx) => (
           <div className="com-image-container" key={idx}>
-            <StaticImage
-              alt="HOC Committee"
-              src="../../../static/committee/HOC.svg"
-              layout="constrained"
-              placeholder="tracedSVG"
+            <GatsbyImage
+              image={c.committeeLogo.gatsbyImageData}
+              alt={c.committeeName + " committee logo"}
             />
           </div>
         ))}
@@ -29,13 +31,11 @@ const TenCommittees = () => {
       </div>
 
       <div className="com-container">
-        {committees.map((c, idx) => (
+        {bottomFive.map((c, idx) => (
           <div className="com-image-container" key={idx}>
-            <StaticImage
-              alt="HOC Committee"
-              src="../../../static/committee/HOC.svg"
-              layout="constrained"
-              placeholder="tracedSVG"
+            <GatsbyImage
+              image={c.committeeLogo.gatsbyImageData}
+              alt={c.committeeName + " committee logo"}
             />
           </div>
         ))}

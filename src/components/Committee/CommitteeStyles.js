@@ -254,7 +254,7 @@ export const CommitteesStyles = styled.section`
     }
 
     .dais {
-      padding-top: 5%;
+      padding-top: 2%;
     }
 
     .eb-img {

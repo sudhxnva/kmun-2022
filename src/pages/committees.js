@@ -9,7 +9,7 @@ const CommitteesPage = () => {
 
   return (
     <>
-      <Seo title="Committee" />
+      <Seo title="Committees" />
       <Layout>
         <Committees committees={committees} />
       </Layout>

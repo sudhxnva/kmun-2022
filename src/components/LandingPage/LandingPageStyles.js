@@ -284,7 +284,6 @@ export const CommitteeStyles = styled.section`
   .com-image-container {
     width: 15vw;
     height: 15vw;
-    background-color: var(--bodyColor);
     padding: 10px;
   }
 

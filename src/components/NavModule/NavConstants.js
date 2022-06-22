@@ -8,11 +8,11 @@ export const menuItems = [
     text: "Committees",
   },
   {
-    path: "/about",
-    text: "About",
-  },
-  {
     path: "/register",
     text: "Register",
+  },
+  {
+    path: "/contact",
+    text: "Contact Us",
   },
 ]
