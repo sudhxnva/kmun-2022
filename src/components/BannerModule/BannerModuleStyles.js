@@ -71,8 +71,10 @@ export const BannerModuleStyles = styled.section`
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+      max-width: none;
+
       h1 {
-        font-size: 6rem;
+        font-size: 7.5rem;
       }
     }
 

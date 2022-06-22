@@ -7,7 +7,6 @@ const TenCommittees = () => {
   const committees = useCommitteeDetails()
   const topFive = committees.slice(0, 5)
   const bottomFive = committees.slice(5)
-  console.log(topFive, bottomFive)
 
   return (
     <CommitteeStyles className="section">

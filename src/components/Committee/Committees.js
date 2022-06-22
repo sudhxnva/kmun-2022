@@ -7,8 +7,6 @@ const Committees = ({ committees }) => {
   const crisisCommittees = committees.filter((c) => c.crisis)
   const nonCrisisCommittees = committees.filter((c) => !c.crisis)
 
-  console.log({ crisisCommittees, nonCrisisCommittees })
-
   return (
     <CommitteesStyles className="section">
       <div className="container">

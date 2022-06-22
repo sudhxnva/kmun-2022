@@ -27,7 +27,7 @@ export const NavModuleStyles = styled.nav`
     background-color: #000;
     width: var(--menuWidth);
     transform: translateX(calc(var(--menuWidth) * -1));
-    height: 100%;
+    height: 100vh;
     top: 0;
     bottom: 0;
     left: 0;
@@ -63,7 +63,7 @@ export const NavTopLevel = styled.ul`
   > li,
   > li > button {
     text-transform: capitalize;
-    font-size: var(--h2);
+    font-size: 36px;
     font-weight: 700;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -86,6 +86,12 @@ export const NavTopLevel = styled.ul`
       > a {
         color: var(--primary);
       }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    > li {
+      padding-bottom: 10px;
     }
   }
 

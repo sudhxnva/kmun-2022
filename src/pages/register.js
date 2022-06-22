@@ -6,7 +6,7 @@ import Registration from "../components/Registration/Registration"
 const Register = () => {
   return (
     <>
-      <Seo title="Committee" />
+      <Seo title="Register" />
       <Layout>
         <Registration />
       </Layout>
