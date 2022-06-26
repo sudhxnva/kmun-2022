@@ -46,7 +46,7 @@ const Contact = () => {
         <div className="map-embed">
           <iframe
             title="kumarans-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.0546776042383!2d77.54139136762355!3d12.846227164258343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae403ec110e9b7%3A0x5c1da0071622ecdd!2sSri%20Kumaran%20Children%20Home%20Auditorium!5e0!3m2!1sen!2sin!4v1655892125462!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2536.925144191935!2d77.5429587716022!3d12.847200076536524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae403924492967%3A0xf833209c13c73fe1!2sSri%20Kumaran%20Public%20School%20-%20ICSE!5e0!3m2!1sen!2sin!4v1656043942650!5m2!1sen!2sin"
             style={{
               border: 0,
               width: "100%",

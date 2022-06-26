@@ -15,7 +15,32 @@ const Sponsors = () => {
             placeholder="tracedSVG"
             style={{ alignSelf: "center", width: "70%" }}
           />
-          {/* <p style={{ paddingTop: "4%" }}>Title Sponsor</p> */}
+          <p style={{ paddingTop: "4%" }}>Title Sponsor</p>
+        </div>
+
+        <div className="cosponsor-container">
+          <div className="cosponsor-grid">
+            <StaticImage
+              src="../../../static/logos/Zylus-Logo@5x.png"
+              alt="Perk Image"
+              layout="constrained"
+              placeholder="tracedSVG"
+              className="sponsor-img"
+            />
+            <StaticImage
+              src="../../../static/logos/datta-impact-logo.png"
+              alt="Perk Image"
+              layout="constrained"
+              className="sponsor-img sm"
+            />
+            <StaticImage
+              src="../../../static/logos/PDM-Logo.jpeg"
+              alt="Perk Image"
+              layout="constrained"
+              className="sponsor-img"
+            />
+          </div>
+          <p>Co-Sponsors</p>
         </div>
       </div>
     </SponsorStyles>

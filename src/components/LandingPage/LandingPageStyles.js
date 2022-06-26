@@ -398,6 +398,38 @@ export const SponsorStyles = styled.section`
       width: 43vw;
     }
   }
+
+  .sponsor-img {
+    width: 110px;
+    height: 100%;
+    margin: 10px;
+  }
+
+  .sm {
+    width: 80px;
+  }
+
+  .cosponsor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cosponsor-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    .sponsor-img {
+      width: 60px;
+    }
+  }
 `
 
 export const PrizeStyles = styled.section`
