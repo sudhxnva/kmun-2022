@@ -111,6 +111,19 @@ const NavModule = () => {
               </Link>
             </li>
           ))}
+          <li>
+            <a
+              onClick={toggleNav}
+              onKeyDown={toggleNav}
+              href="https://drive.google.com/uc?export=download&id=1UkHERlxV6kiRsqO0c_OaG5NlrWr0nEgh"
+              target="_blank"
+              rel="noreferrer"
+              activeClassName="menu__item--active"
+            >
+              Get your handbook
+              <span>.</span>
+            </a>
+          </li>
         </NavTopLevel>
       </motion.div>
     </NavModuleStyles>
