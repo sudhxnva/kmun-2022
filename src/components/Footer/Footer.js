@@ -9,6 +9,8 @@ import {
   FaInstagram as Instagram,
   FaLinkedin as Linkedin,
 } from "react-icons/fa"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
   const siteMeta = UseSiteMetadata()
@@ -28,6 +30,22 @@ const Footer = () => {
                 </li>
               )
             })}
+
+            <li>
+              <a
+                href="https://drive.google.com/drive/u/2/folders/18QoY4jHgLEZq9hHdGlRcCW_rY_KN8gXj"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resources
+                <span>.</span>
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  style={{ fontSize: "18px", paddingLeft: "7px" }}
+                  color="#e6e4ed39"
+                />
+              </a>
+            </li>
           </ul>
         </FooterMenuStyles>
 

@@ -17,6 +17,8 @@ import {
   barThreeVariants,
   menuList,
 } from "./NavAnim"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
 const NavModule = () => {
   const [isOpen, setNav] = useContext(MenuContext)
@@ -115,13 +117,17 @@ const NavModule = () => {
             <a
               onClick={toggleNav}
               onKeyDown={toggleNav}
-              href="https://drive.google.com/uc?export=download&id=1UkHERlxV6kiRsqO0c_OaG5NlrWr0nEgh"
+              href="https://drive.google.com/drive/u/2/folders/18QoY4jHgLEZq9hHdGlRcCW_rY_KN8gXj"
               target="_blank"
               rel="noreferrer"
-              activeClassName="menu__item--active"
             >
-              Get your handbook
+              Resources
               <span>.</span>
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                style={{ fontSize: "30px", paddingLeft: "7px" }}
+                color="#e6e4ed39"
+              />
             </a>
           </li>
         </NavTopLevel>

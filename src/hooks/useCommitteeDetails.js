@@ -47,6 +47,7 @@ const useCommitteeDetails = () => {
             )
           }
           modPosition
+          bgDownloadLink
         }
       }
     }

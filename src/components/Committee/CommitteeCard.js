@@ -25,6 +25,9 @@ const CommitteeCard = ({ data }) => {
           <p className="writeup">
             {data.committeeDescription.committeeDescription}
           </p>
+          <a className="link" href={data.bgDownloadLink}>
+            Download the Background Guide
+          </a>{" "}
         </div>
       </div>
       <div className="dais">

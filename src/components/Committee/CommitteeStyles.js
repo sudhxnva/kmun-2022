@@ -52,6 +52,21 @@ export const CommitteesStyles = styled.section`
     padding-right: 15px;
   }
 
+  .ext-link {
+    filter: invert(78%) sepia(11%) saturate(1551%) hue-rotate(207deg)
+      brightness(98%) contrast(95%);
+  }
+
+  .link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--inActive);
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
   .dais {
     display: grid;
     margin: 0 auto;
