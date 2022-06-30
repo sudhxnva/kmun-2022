@@ -39,6 +39,12 @@ const Sponsors = () => {
               layout="constrained"
               className="sponsor-img"
             />
+            <StaticImage
+              src="../../../static/logos/dr-agarwals.svg"
+              alt="Perk Image"
+              layout="constrained"
+              className="sponsor-img"
+            />
           </div>
           <p>Co-Sponsors</p>
         </div>
