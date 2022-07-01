@@ -4,7 +4,7 @@ const useCommitteeDetails = () => {
   const {
     allContentfulCommittee: { nodes },
   } = useStaticQuery(graphql`
-    query featuredProductLinksQuery {
+    query committeeDetailsQuery {
       allContentfulCommittee {
         nodes {
           id

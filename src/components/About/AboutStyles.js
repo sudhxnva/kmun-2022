@@ -157,11 +157,18 @@ export const AboutStyles = styled.section`
     .tile-img {
       width: 270px;
     }
+
+    .oc-img {
+      width: 250px;
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xxl}) {
     .tile-img {
       width: 300px;
+    }
+    .oc-img {
+      width: 250px;
     }
   }
 `

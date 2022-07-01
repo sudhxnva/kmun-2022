@@ -1,5 +1,6 @@
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
+import useOCTiles from "../../hooks/useOCTiles"
 import ButtonFilled from "../Button/ButtonFilled"
 import Section from "../Section/Section"
 import SectionHeading from "../Section/SectionHeading"
@@ -83,6 +84,10 @@ const core = (
 )
 
 const About = () => {
+  const members = useOCTiles()
+  const heads = members.filter((member) => member.ocHead)
+  const nonHeads = members.filter((member) => !member.ocHead)
+
   return (
     <AboutStyles className="section">
       <div className="container">
@@ -91,6 +96,46 @@ const About = () => {
         {secGen}
         {core}
         <SectionHeading title="Organising Committee" />
+        <div className="tile-section">
+          {heads.map((member) => (
+            <div className="tile" key={member.id}>
+              <div className="tile-img oc-img">
+                <GatsbyImage
+                  image={member.ocImage.gatsbyImageData}
+                  alt={"Photo of" + member.ocTitle + " - " + member.ocName}
+                />
+              </div>
+              <div className="tile-info">
+                <div className="tile-name">{member.ocName}</div>
+                <div
+                  className="tile-title"
+                  style={{ color: member.ocHead ? "" : "var(--bodyColor)" }}
+                >
+                  {member.ocTitle}
+                </div>
+              </div>
+            </div>
+          ))}
+          {nonHeads.map((member) => (
+            <div className="tile" key={member.id}>
+              <div className="tile-img oc-img">
+                <GatsbyImage
+                  image={member.ocImage.gatsbyImageData}
+                  alt={"Photo of" + member.ocTitle + " - " + member.ocName}
+                />
+              </div>
+              <div className="tile-info">
+                <div className="tile-name">{member.ocName}</div>
+                <div
+                  className="tile-title"
+                  style={{ color: member.ocHead ? "" : "var(--bodyColor)" }}
+                >
+                  {member.ocTitle}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </AboutStyles>
   )
