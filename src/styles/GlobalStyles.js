@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   --h5: 17px;
   --h6: 16px;
   --gap: 40px;
-  --sectionMargin: 60px;
+  --sectionMargin: 120px;
 
   @media(min-width:375px) {
     --bannerTitle: 36px;    
@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     --h4: 20px;
     --h5: 19px;
     --h6: 18px;
-    --sectionMargin: 80px;
+    --sectionMargin: 100px;
   }
 
   @media(min-width:414px) {
@@ -63,7 +63,7 @@ export const GlobalStyle = createGlobalStyle`
     --h4: 29px;
     --h5: 27px;
     --h6: 25px;
-    --sectionMargin: 180px;
+    --sectionMargin: 100px;
   }
 
   @media(min-width:1200px) {

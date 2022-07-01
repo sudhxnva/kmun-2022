@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const ButtonFilledStyles = styled.button`
+export const ButtonFilledStyles = styled.div`
   color: #fff;
   background-color: var(--primary);
   font-family: "Montserrat", sans-serif;
