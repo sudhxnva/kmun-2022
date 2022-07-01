@@ -54,7 +54,8 @@ export const SectionStyles = styled.section`
 
     .sc-description {
       padding-top: 10%;
-      padding-left: 0;
+      padding-left: 5%;
+      padding-right: 5%;
       font-size: 1.05rem;
       text-align: center;
     }
@@ -75,7 +76,8 @@ export const SectionStyles = styled.section`
 
     .sc-description {
       padding-top: 10%;
-      padding-left: 0;
+      padding-left: 5%;
+      padding-right: 5%;
       font-size: 1.05rem;
       text-align: center;
     }

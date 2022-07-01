@@ -45,7 +45,26 @@ export const AboutStyles = styled.section`
     margin-bottom: 70px;
   }
 
+  .letter-container {
+    border: 2px solid #ffffff1c;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .letter-content {
+    padding: 20px;
+    margin: 0 auto;
+    white-space: pre-line;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    padding: 0 4% !important;
+
     .secgen-section {
       flex-direction: column;
     }
@@ -77,9 +96,16 @@ export const AboutStyles = styled.section`
     .secgen-name {
       font-size: 1.5rem;
     }
+
+    .letter-container {
+      margin-top: 10%;
+      max-height: 450px;
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    padding: 0 5% !important;
+
     .secgen-section {
       flex-direction: column;
     }
@@ -111,6 +137,10 @@ export const AboutStyles = styled.section`
     .secgen-name {
       font-size: 1.5rem;
     }
+    .letter-container {
+      margin-top: 10%;
+      max-height: 500px;
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -137,6 +167,12 @@ export const AboutStyles = styled.section`
     .letter {
       padding-top: 10px;
     }
+
+    .letter-container {
+      margin-top: 5%;
+      width: 80%;
+      max-height: 400px;
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
@@ -160,6 +196,12 @@ export const AboutStyles = styled.section`
 
     .oc-img {
       width: 250px;
+    }
+
+    .letter-container {
+      margin-top: 0;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 
