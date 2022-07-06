@@ -58,7 +58,7 @@ export const PostItemStyles = styled(Link)`
   }
 
   > p {
-    margin-bottom: var(--gap);
+    margin-bottom: 20px;
   }
 
   a {
