@@ -1,26 +1,14 @@
 import React from "react"
-import { createWidget } from "@typeform/embed"
 import "@typeform/embed/build/css/widget.css"
 
 import { RegistrationStyles } from "./RegistrationStyles"
-import { useEffect } from "react"
-import { useRef } from "react"
 
 const Registration = () => {
-  const form = useRef()
-
-  useEffect(() => {
-    createWidget("sL32D2at", {
-      container: form.current,
-      opacity: 10,
-    })
-  }, [])
-
   return (
     <RegistrationStyles className="section">
       <div className="reg-banner container">
         <h1>
-          2ND ROUND REGISTRATIONS <span className="highlight">OPEN NOW</span>
+          REGISTRATIONS ARE <span className="highlight">CLOSED</span>
         </h1>
       </div>
 
@@ -55,10 +43,6 @@ const Registration = () => {
           </div>
         </div>
       </div>
-
-      <h2 className="reg-title">REGISTER BELOW</h2>
-
-      <div ref={form} style={{ width: "100%", height: "70vh" }}></div>
     </RegistrationStyles>
   )
 }
