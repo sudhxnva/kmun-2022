@@ -119,4 +119,13 @@ export const PostSingleStyles = styled.article`
       padding-top: var(--gap);
     }
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  .date{
+    text-align:right;
+  }
+
 `

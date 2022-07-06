@@ -19,4 +19,8 @@ export const menuItems = [
     path: "/contact",
     text: "Contact Us",
   },
+  {
+    path: "/press",
+    text: "Press",
+  },
 ]

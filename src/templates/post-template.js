@@ -5,15 +5,21 @@ import { PostSingleStyles } from "../components/Post/PostStyles"
 import RichText from "../components/RichText"
 
 const PostTemplate = (contentfulPost) => {
-  const { title, createdAt, content } = contentfulPost
+  const { title, committee, authors, createdAt, content } = contentfulPost
   return (
     <>
       <section>
         <PostSingleStyles>
           {title && <h1 className="blogsingle__title">{title}</h1>}
+          <div class="grid-container">
+          {authors && (
+        <p className="author">{authors}</p>
+      )}
           {createdAt && (
-            <p className="blogsingle__date">Posted on {createdAt}</p>
+            <p className="date">{createdAt}</p>
           )}
+          
+      </div>
           {content && (
             <article className="blogsingle__content">
               <RichText richText={content} />
