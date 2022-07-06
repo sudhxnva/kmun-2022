@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import { CountdownDiv } from "./CountdownStyles"
 
 export default function Countdown() {
-  const deadline = new Date("Jul 06, 2022 10:00:00").getTime()
+  const deadline = new Date("Jul 06, 2022 09:00:00").getTime()
   const [time, setTime] = useState({
     days: 0,
     minutes: 0,

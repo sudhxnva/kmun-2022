@@ -20,7 +20,7 @@ const Registration = () => {
     <RegistrationStyles className="section">
       <div className="reg-banner container">
         <h1>
-          PRIORITY REGISTRATIONS <span className="highlight">OPEN NOW</span>
+          2ND ROUND REGISTRATIONS <span className="highlight">OPEN NOW</span>
         </h1>
       </div>
 
