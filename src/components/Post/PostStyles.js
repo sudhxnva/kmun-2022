@@ -104,10 +104,21 @@ export const PostSingleStyles = styled.article`
   margin: 0 auto;
   box-sizing: content-box;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding-top: 120px;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding-top: 150px;
+  }
+
   .blogsingle {
     &__title {
-      font-size: var(--h2);
+      font-size: 3.4rem;
       font-weight: 700;
+      @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        font-size: 2rem;
+      }
     }
 
     &__content {
@@ -120,12 +131,21 @@ export const PostSingleStyles = styled.article`
     }
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-  }
-  .date{
-    text-align:right;
+  .byline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
   }
 
+  .date {
+    text-align: right;
+  }
+
+  .author,
+  .date {
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+      font-size: 12px;
+    }
+  }
 `
