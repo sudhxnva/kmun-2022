@@ -997,7 +997,7 @@
     "@babel/plugin-transform-modules-commonjs" "^7.27.1"
     "@babel/plugin-transform-typescript" "^7.27.1"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.5", "@babel/runtime@^7.17.9", "@babel/runtime@^7.18.0", "@babel/runtime@^7.21.0", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.5", "@babel/runtime@^7.18.0", "@babel/runtime@^7.21.0", "@babel/runtime@^7.9.2":
   version "7.28.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.4.tgz#a70226016fabe25c5783b2f22d3e1c9bc5ca3326"
   integrity sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==
@@ -2268,9 +2268,9 @@
     form-data "^4.0.4"
 
 "@types/node@*", "@types/node@>=10.0.0":
-  version "24.9.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.9.0.tgz#4fb62beb8b322fe2955ac94f80ff5a58c941ebf4"
-  integrity sha512-MKNwXh3seSK8WurXF7erHPJ2AONmMwkI7zAMrXZDPIru8jRqkk6rGDBVbw4mLwfqA+ZZliiDPg05JQ3uW66tKQ==
+  version "24.9.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.9.1.tgz#b7360b3c789089e57e192695a855aa4f6981a53c"
+  integrity sha512-QoiaXANRkSXK6p0Duvt56W208du4P9Uye9hWLWgGMDTEoKPhuenzNcC4vGUmrNkiOKTlIrBoyNQYNpSwfEZXSg==
   dependencies:
     undici-types "~7.16.0"
 
@@ -5734,12 +5734,12 @@ gatsby-plugin-react-helmet@^5.4.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-plugin-robots-txt@^1.6.14:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-robots-txt/-/gatsby-plugin-robots-txt-1.8.0.tgz#f237b7e9bec2d8dc276305ff629ecf3df8277c63"
-  integrity sha512-GMUIrsCPncb10wM9cuF2ZwYNN8revEolzvvizT0RzRE4NhPxsQUT4LIRE4n5IYQhbYu6oYZtfeG7YreFXmxLMw==
+gatsby-plugin-robots-txt@1.6.14:
+  version "1.6.14"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-robots-txt/-/gatsby-plugin-robots-txt-1.6.14.tgz#e7ce50b137fecc81c1ac384ddc544a4bafd8da89"
+  integrity sha512-5NLdgKPw7xHjvowNDU5aWzl/g3M3WU0Equn73aXGGdEue9Nuq7zh/Lh3oX+OM+MZolRCiM9GNHxdIvYPDWNXgA==
   dependencies:
-    "@babel/runtime" "^7.17.9"
+    "@babel/runtime" "^7.15.4"
     generate-robotstxt "^8.0.3"
 
 gatsby-plugin-sharp@^4.4.0:
